@@ -4,13 +4,18 @@
   <title>Learn Korean with Heena</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin:0px;
+  }
   a {
- color:black; text-decoration: none;
+    color:black; text-decoration: none;
   }
   h1 {
-    font-size: 50px;
+    font: 50px cursive;
     text-align:center;
-    font-family: cursive;
+    border-bottom:1px solid gray;
+    margin:0px;
+    padding:20px;
   }
   h2 {
     font-size: 40px;
@@ -18,9 +23,12 @@
     font-variant: small-caps;
     text-align: center;
   }
-  h3 {
-    font-size: 25px;
-    font-family: monospace;
+  ol {
+    font: 28px monospace;
+    border-right: 1px solid gray;
+    width: 120px;
+    margin:0px;
+    padding:20px
   }
   h4 {
     text-align:center;
@@ -34,43 +42,56 @@ h5 {
    margin-right: auto;
    width: 35%;
   }
+  .saw{
+   color: gray;
+  }
+  #active{
+    color:red;
+  }
+  #grid{
+     display: grid;
+     grid-template-columns: 150px 1fr
+  }
     </style>
 </head>
 
 <body>
   <h1><a href="index.html">Learn Korean with Heena</a></h1>
-<ol><h3>
-  <li><a href="1.html">Introduce</a></li>
-  <li><a href="2.html" style="color:red; text-decoration: underline;">Contants</a></li>
-  <li><a href="3.html">Contact</a></li></h3>
-</ol>
+<div id="grid">  
+  <ol>
+    <li><a href="1.html" class="saw">Introduce</a></li>
+    <li><a href="2.html" class="saw" id="active">Contants</a></li>
+    <li><a href="3.html">Contact</a></li>
+  </ol>
+  <div>
+  <h2>CONTANTS</h2>
 
-<h2>CONTANTS</h2>
+  <img src="hangeul.jpg" class="center">
+  <p>
+  <h4>Learn Korean With me</h4>
+  </p>
 
-<img src="hangeul.jpg" class="center">
-<p>
-<h4>Learn Korean With me</h4>
-</p>
-
-<p><h5>
-I really like teaching and I taught Korean through Tandem and Online.
-<br>And here I want to teach Korean to more people and giving them privat lessons.</h5>
-</p>
-<p>
-<h4>The lesson will be going through in this way!</h4>
-</p>
-<p><h5>
-  1. Free talking in Korean<br>
-  2. Pick a Thema and learn words about it<br>
-  3. Make sentences with the Grammar we learned<br>
-  4. Read the Books together<br>
-  5.  Write a Essay (It can be a homework too)<br>
-</h5><p>
-  <h4>The course will be very flexibel It's all up to you!</h4>
-</p>
-  <p><h4>
-    I hope we will see each other soon!<br>
-  Thank you!</h4>
-</p>
+  <p><h5>
+  I really like teaching and I taught Korean through Tandem and Online.
+  <br>And here I want to teach Korean to more people and giving them privat lessons.</h5>
+  </p>
+  <p>
+  <h4>The lesson will be going through in this way!</h4>
+  </p>
+  <p><h5>
+    1. Free talking in Korean<br>
+    2. Pick a Thema and learn words about it<br>
+    3. Make sentences with the Grammar we learned<br>
+    4. Read the Books together<br>
+    5.  Write a Essay (It can be a homework too)<br>
+  </h5><p>
+    <h4>The course will be very flexibel It's all up to you!</h4>
+  </p>
+    <p><h4>
+      I hope we will see each other soon!<br>
+    Thank you!</h4>
+  </p>
+  </div>
+</div>
 </body>
 </html>
